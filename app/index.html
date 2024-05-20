@@ -18,35 +18,62 @@
     />
   </head>
   <body>
-    <!-- navigation bar -->
-    <header>
-      <nav class="navbar">
-        <a
-          href="index.html"
-          aria-hidden="false"
-          aria-label="Home"
-          class="navbar__logo-link"
-        >
-          <img src="images/logo.svg" alt="official logo" class="navbar__logo"
-        /></a>
-        <ul class="navbar__links">
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Product</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Features</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Pricing</a>
-          </li>
-          <div class="separator-center">
-            <span class="separator"></span>
+    <main>
+      <!-- navigation bar -->
+      <header>
+        <nav class="navbar">
+          <a
+            href="index.html"
+            aria-hidden="false"
+            aria-label="Home"
+            class="navbar__logo-link"
+          >
+            <img src="images/logo.svg" alt="official logo" class="navbar__logo"
+          /></a>
+          <ul class="navbar__links">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Product</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Features</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Pricing</a>
+            </li>
+            <div class="separator-center">
+              <span class="separator"></span>
+            </div>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link navbar__link-login">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- content -->
+      <div class="content-cols">
+        <section class="content__text-content">
+          <p class="content__new-text">
+            <span class="newHighlighted">New</span> Monograph Dashboard
+          </p>
+          <h1 class="content__heading-large">
+            Powerful insights into your team
+          </h1>
+          <p class="content__text">
+            Project planning and time tracking for agile teams
+          </p>
+          <div class="button-and-text">
+            <button class="button-red">Schedule a demo</button>
+            <p class="preview-text">to see a live preview</p>
           </div>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link navbar__link-login">Login</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        </section>
+        <section class="content__image-content">
+          <img
+            src="images/illustration-devices.svg"
+            alt=""
+            class="content__image"
+          />
+        </section>
+      </div>
+    </main>
   </body>
 </html>
