@@ -170,3 +170,21 @@
   font-size: var(--fs--1);
   color: var(--neutral-grayish-blue);
 }
+
+/* image position fix */
+.content__image-content {
+  position: relative;
+  background-color: var(--neutral-grayish-blue);
+  min-height: 100%;
+  overflow: hidden;
+  /* padding: 5rem; */
+}
+
+.content__image {
+  position: absolute;
+  /* inset: 0; */
+  left: 15%;
+  bottom: 0;
+  max-width: 50rem;
+  top: 15%;
+}
