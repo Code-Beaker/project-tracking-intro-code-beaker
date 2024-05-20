@@ -174,16 +174,27 @@
 /* image position fix */
 .content__image-content {
   position: relative;
-  background-color: var(--neutral-grayish-blue);
+  /* background-color: var(--neutral-grayish-blue); */
   min-height: 100%;
   overflow: hidden;
   /* padding: 5rem; */
 }
 
+.content__image-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70%;
+  width: 95%;
+  border-end-start-radius: 5rem;
+  background-color: var(--neutral-light-grayish-blue);
+}
+
 .content__image {
   position: absolute;
   /* inset: 0; */
-  left: 15%;
+  left: 5%;
   bottom: 0;
   max-width: 50rem;
   top: 15%;
