@@ -1,0 +1,28 @@
+:root {
+  --font-body: "Barlow", sans-serif;
+  --font-title: "Barlow Condensed", sans-serif;
+
+  /* font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* colors */
+  --primary-red: hsl(0, 100%, 68%);
+
+  --neutral-very-dark-blue: hsl(230, 29%, 20%);
+  --neutral-dark-grayish-blue: hsl(230, 11%, 40%);
+  --neutral-grayish-blue: hsl(231, 7%, 65%);
+  --neutral-light-grayish-blue: hsl(207, 33%, 95%);
+
+  /* font sizes with clamp */
+  --fs--2: clamp(0.7813rem, 0.7191rem + 0.3109vi, 0.96rem);
+  --fs--1: clamp(0.9375rem, 0.8462rem + 0.4565vi, 1.2rem);
+  --fs-0: clamp(1.125rem, 0.9946rem + 0.6522vi, 1.5rem);
+  --fs-1: clamp(1.35rem, 1.1674rem + 0.913vi, 1.875rem);
+  --fs-2: clamp(1.62rem, 1.3683rem + 1.2587vi, 2.3438rem);
+  --fs-3: clamp(1.944rem, 1.6012rem + 1.7142vi, 2.9297rem);
+  --fs-4: clamp(2.3328rem, 1.8704rem + 2.3118vi, 3.6621rem);
+  --fs-5: clamp(2.7994rem, 2.1808rem + 3.0927vi, 4.5776rem);
+}
