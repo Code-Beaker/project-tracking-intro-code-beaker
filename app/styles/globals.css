@@ -45,13 +45,12 @@ h6 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+button {
   font-family: var(--font-title);
 }
 
 p,
-a,
-input,
-button {
+a {
   font-family: var(--font-body);
 }
