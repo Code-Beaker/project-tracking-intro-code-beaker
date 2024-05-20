@@ -5,7 +5,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 2rem 7.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .navbar__logo {
@@ -91,7 +94,8 @@
 
 /* text content */
 .content__text-content {
-  padding: min(10vh, 5rem) min(10vh, 7.5rem);
+  padding: 5rem 7.5rem;
+  padding-top: 7.5rem;
 }
 
 .content__new-text {
@@ -189,6 +193,7 @@
   width: 95%;
   border-end-start-radius: 5rem;
   background-color: var(--neutral-light-grayish-blue);
+  z-index: 0;
 }
 
 .content__image {
@@ -197,5 +202,5 @@
   left: 5%;
   bottom: 0;
   max-width: 50rem;
-  top: 15%;
+  top: 25%;
 }
