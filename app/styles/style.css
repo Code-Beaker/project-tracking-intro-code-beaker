@@ -1,2 +1,83 @@
 @import "./variables.css";
 @import "./globals.css";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.navbar__logo {
+  max-width: 10rem;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar__link {
+  text-transform: uppercase;
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs--1);
+  text-decoration: none;
+  color: var(--neutral-very-dark-blue);
+  outline-offset: 0.25rem;
+  position: relative;
+  transition: opacity 0.125s ease;
+}
+
+.navbar__link:hover {
+  opacity: 0.75;
+}
+
+.navbar__link:focus {
+  outline: 0.15rem dotted;
+}
+
+/* underline */
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  height: 0.125rem;
+  width: 100%;
+  background-color: var(--neutral-very-dark-blue);
+  bottom: 0;
+  left: 0;
+  scale: 0 1;
+  transform-origin: left;
+  transition: scale 0.125s ease;
+}
+
+.navbar__link:hover::after {
+  scale: 1;
+}
+
+/* separator */
+.separator-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--neutral-grayish-blue);
+  border-radius: 50%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* login link */
+.navbar__link-login {
+  color: var(--neutral-grayish-blue);
+}
+
+.navbar__link-login::after {
+  background-color: var(--neutral-grayish-blue);
+}
