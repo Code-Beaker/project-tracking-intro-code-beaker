@@ -35,7 +35,13 @@
                 class="navbar__logo"
               />
             </a>
-            <button class="navbar__toggle-btn" id="toggleButton">
+            <button
+              aria-hidden="false"
+              aria-label="toggle navigation"
+              aria-labelledby="toggle navigation"
+              class="navbar__toggle-btn"
+              id="toggleButton"
+            >
               <img
                 src="images/icon-hamburger.svg"
                 alt=""
@@ -75,7 +81,14 @@
             Project planning and time tracking for agile teams
           </p>
           <div class="button-and-text">
-            <button class="button-red">Schedule a demo</button>
+            <button
+              tabindex="0"
+              aria-hidden="false"
+              role="button"
+              class="button-red"
+            >
+              Schedule a demo
+            </button>
             <p class="preview-text">to see a live preview</p>
           </div>
         </section>
