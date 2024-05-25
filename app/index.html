@@ -22,14 +22,33 @@
       <!-- navigation bar -->
       <header>
         <nav class="navbar">
-          <a
-            href="index.html"
-            aria-hidden="false"
-            aria-label="Home"
-            class="navbar__logo-link"
-          >
-            <img src="images/logo.svg" alt="official logo" class="navbar__logo"
-          /></a>
+          <div class="navbar__top">
+            <a
+              href="index.html"
+              aria-hidden="false"
+              aria-label="Home"
+              class="navbar__logo-link"
+            >
+              <img
+                src="images/logo.svg"
+                alt="official logo"
+                class="navbar__logo"
+              />
+            </a>
+            <button
+              aria-hidden="false"
+              aria-label="toggle navigation"
+              aria-labelledby="toggle navigation"
+              class="navbar__toggle-btn"
+              id="toggleButton"
+            >
+              <img
+                src="images/icon-hamburger.svg"
+                alt=""
+                class="navtoggleImage"
+              />
+            </button>
+          </div>
           <ul class="navbar__links">
             <li class="navbar__item">
               <a href="#" class="navbar__link">Product</a>
@@ -62,7 +81,14 @@
             Project planning and time tracking for agile teams
           </p>
           <div class="button-and-text">
-            <button class="button-red">Schedule a demo</button>
+            <button
+              tabindex="0"
+              aria-hidden="false"
+              role="button"
+              class="button-red"
+            >
+              Schedule a demo
+            </button>
             <p class="preview-text">to see a live preview</p>
           </div>
         </section>
@@ -75,5 +101,6 @@
         </section>
       </div>
     </main>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
