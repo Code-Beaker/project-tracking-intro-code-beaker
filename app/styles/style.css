@@ -1,6 +1,10 @@
 @import "./variables.css";
 @import "./globals.css";
 
+main {
+  min-height: 100vh;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -13,6 +17,30 @@
 
 .navbar__logo {
   max-width: 10rem;
+}
+
+.logo-and-skip-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* skip to main content */
+.skip-link {
+  text-decoration: none;
+  font-size: var(--fs--2);
+  font-weight: var(--fw-semibold);
+  outline-offset: 0.125rem;
+  color: var(--neutral-very-dark-blue);
+}
+
+.skip-link:hover {
+  text-decoration: underline;
+}
+
+.skip-link:focus {
+  outline: 0.125rem dotted black;
 }
 
 .navbar__links {

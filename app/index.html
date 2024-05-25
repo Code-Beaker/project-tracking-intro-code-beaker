@@ -17,18 +17,23 @@
       <header>
         <nav class="navbar">
           <div class="navbar__top">
-            <a
-              href="index.html"
-              aria-hidden="false"
-              aria-label="Home"
-              class="navbar__logo-link"
-            >
-              <img
-                src="images/logo.svg"
-                alt="official logo"
-                class="navbar__logo"
-              />
-            </a>
+            <div class="logo-and-skip-wrapper">
+              <a
+                href="index.html"
+                aria-hidden="false"
+                aria-label="Home"
+                class="navbar__logo-link"
+              >
+                <img
+                  src="images/logo.svg"
+                  alt="official logo"
+                  class="navbar__logo"
+                />
+              </a>
+              <a href="#mainContent" tabindex="0" class="skip-link"
+                >Skip to main content</a
+              >
+            </div>
             <button
               aria-hidden="false"
               aria-label="toggle navigation"
@@ -63,7 +68,7 @@
         </nav>
       </header>
       <!-- content -->
-      <div class="content-cols">
+      <div tabindex="-1" id="mainContent" class="content-cols">
         <section class="content__text-content">
           <p class="content__new-text">
             <span class="newHighlighted">New</span> Monograph Dashboard
