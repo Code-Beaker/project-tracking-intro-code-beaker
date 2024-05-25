@@ -10,26 +10,28 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 7.5rem;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 1;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(0.25rem);
 }
 
 .navbar__logo {
   max-width: 10rem;
 }
 
-.logo-and-skip-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+.skip-container {
+  padding: 1.5rem;
+  background-color: var(--neutral-light-grayish-blue);
 }
 
 /* skip to main content */
 .skip-link {
   text-decoration: none;
-  font-size: var(--fs--2);
+  font-size: var(--fs--1);
   font-weight: var(--fw-semibold);
   outline-offset: 0.125rem;
   color: var(--neutral-very-dark-blue);
@@ -259,8 +261,6 @@ main {
   .navbar {
     padding: 2rem;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(0.25rem);
   }
 
   .navbar__toggle-btn {
